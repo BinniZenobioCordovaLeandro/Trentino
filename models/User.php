@@ -1,8 +1,9 @@
 <?php
 
 namespace app\models;
+use Yii;
 
-class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
+class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
     public $id;
     public $username;
